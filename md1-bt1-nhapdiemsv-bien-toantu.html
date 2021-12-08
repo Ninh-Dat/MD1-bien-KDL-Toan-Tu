@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let vatLy;
+    let hoaHoc;
+    let sinhSoc;
+
+    vatLy = prompt('Điểm lý');
+    hoaHoc = prompt('Điểm hóa');
+    sinhSoc = prompt('Điểm sinh');
+
+    document.write('Điểm vật lý = ' + vatLy)
+    document.write('<br>')
+    document.write('Điểm hóa học = ' + hoaHoc);
+    document.write('<br>')
+    document.write('Điểm sinh học = ' + sinhSoc);
+
+    vatLy = parseInt(vatLy);
+    hoaHoc = parseInt(hoaHoc);
+    sinhSoc = parseInt(sinhSoc);
+
+
+    //tính điểm trung bình
+    s= (vatLy + hoaHoc +sinhSoc)/3
+
+    document.write('<br>')
+    document.write('ĐTB = ' + s);
+
+    //tính tổng
+
+    t= (vatLy + hoaHoc +sinhSoc)
+
+    document.write('<br>')
+    document.write('Tổng = ' + t);
+</script>
+</body>
+</html>
